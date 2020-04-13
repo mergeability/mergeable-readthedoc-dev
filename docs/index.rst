@@ -8,7 +8,8 @@ Welcome to Mergeable's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+
+   configuration.rst
 
 
 
