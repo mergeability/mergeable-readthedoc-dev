@@ -14,8 +14,10 @@ Welcome to Mergeable's documentation!
    validators.rst
    actions.rst
    receipes.rst
+   roadmap.rst
+   contributing.rst
+   support.rst
    changelog.rst
-
 
 
 Indices and tables
