@@ -1,6 +1,6 @@
 Configuration
 =====================================
 This is the configuration page
-.. header::
+.. note::
     test
 

@@ -9,7 +9,12 @@ Welcome to Mergeable's documentation!
 .. toctree::
    :maxdepth: 2
 
+   installation.rst
    configuration.rst
+   validators.rst
+   actions.rst
+   receipes.rst
+   changelog.rst
 
 
 
