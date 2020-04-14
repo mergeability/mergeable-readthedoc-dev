@@ -38,14 +38,14 @@ Here is a full example of how a rule set looks
               must_exclude:
                 regex: [WIP]
                 message: 'PR is still WIP'
+          pass:
+            - do: checks # default pass case
+              status: 'success' # Can be: success, failure, neutral, cancelled, timed_out, or action_required
+              payload:
+              title: 'Mergeable Run have been Completed!'
+              summary: "All the validators have returned 'pass'! \n Here are some stats of the run: \n {{validationCount}} validations were ran"
 
-pass:
-          - do: checks # default pass case
-            status: 'success' # Can be: success, failure, neutral, cancelled, timed_out, or action_required
-            payload:
-            title: 'Mergeable Run have been Completed!'
-            summary: "All the validators have returned 'pass'! \n Here are some stats of the run: \n {{validationCount}} validations were ran"
-        fail:
+fail:
           - do: checks # default fail case
             status: 'failure' # Can be: success, failure, neutral, cancelled, timed_out, or action_required
             payload:
