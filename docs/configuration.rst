@@ -36,10 +36,10 @@ Here is a full example of how a rule set looks
           validate:
             - do: title
               must_exclude:
+                regex: [WIP]
+                message: 'PR is still WIP'
 
-regex: [WIP]
-              message: 'PR is still WIP'
-        pass:
+pass:
           - do: checks # default pass case
             status: 'success' # Can be: success, failure, neutral, cancelled, timed_out, or action_required
             payload:
