@@ -15,8 +15,6 @@ To get started, follow
 
    installation.rst
    configuration.rst
-   validators.rst
-   actions.rst
    receipes.rst
    roadmap.rst
    contributing.rst

@@ -117,12 +117,33 @@ Approvals
         changes_requested: true #If true, block all approvals when one of the reviewers gave 'changes_requested' review
         message: 'Custom message...'
 
-.. note::
+.. warning::
     ``owners`` sub-option only works in public repos right now, we have plans to enable it for private repos in the future.
 
 Supported Events:
 ::
 
     'pull_request.*', 'pull_request_review.*'
+
+Assignee
+^^^^^^^^^^
+
+::
+
+    - do: assignee
+      max:
+        count: 2 # There should not be more than 2 assignees
+        message: 'test string' # this is optional
+      min:
+        count: 2 # min number of assignees
+        message: 'test string' # this is optional
+
+Supported Events:
+::
+
+    'pull_request.*', 'pull_request_review.*', 'issues.*'
+
+Actions
+------------
 
 
