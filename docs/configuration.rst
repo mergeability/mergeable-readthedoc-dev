@@ -1,6 +1,10 @@
 Configuration
 =====================================
+
+Basics
 This is the configuration page
-.. note::
-    test
+
+Hint
+
+testing Hint
 
