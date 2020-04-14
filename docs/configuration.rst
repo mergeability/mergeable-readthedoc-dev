@@ -92,7 +92,10 @@ Here is a full example of how a rule set looks
 Validators
 ------------
 
-Validators are checks that mergeable will process in order to determine whether an action should be done.
+Validators are checks that mergeable will process in order to determine whether an action should be executed.
+
+.. note::
+Each validator have certain events that it can support, so keep an eye for them.
 
 
 Approvals
