@@ -29,6 +29,7 @@ error:
 Here is a full example of how a rule set looks
 
 ::
+
     version: 2
     mergeable:
       - when: pull_request.*
