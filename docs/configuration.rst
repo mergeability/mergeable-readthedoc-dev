@@ -15,20 +15,72 @@ Basics
 
 Mergeable configuration consists of an array of rule sets where each rule set needs to have the following properties:
 
-when: ruleset
+when:
     specify webhook event(s) in which to process the rule set
-validate: ruleset
+validate:
     specify a series of validator to be checked
-pass: ruleset
+pass:
     specify a series of action to execute if the validation suite returned a `pass`
-fail: ruleset
+fail:
     specify a series of action to execute if the validation suite returned a `fail`
-error: ruleset
+error:
     specify a series of action to execute if the validation suite returned a `error`
 
-```
+::
     - when: pull_request.*
-```
+      validate:
+        - do: title
+          must_exclude:
+            regex: [WIP]
+            message: 'PR is still WIP'
+      pass:
+        - do: checks # default pass case
+          status: 'success' # Can be: success, failure, neutral, cancelled, timed_out, or action_required
+          payload:
+          title: 'Mergeable Run have been Completed!'
+          summary: "All the validators have returned 'pass'! \n Here are some stats of the run: \n {{validationCount}} validations were ran"
+      fail:
+        - do: checks # default fail case
+          status: 'failure' # Can be: success, failure, neutral, cancelled, timed_out, or action_required
+          payload:
+          title: 'Mergeable Run have been Completed!'
+          summary: |
+            ### Status: {{toUpperCase validationStatus}}
+              Here are some stats of the run:
+              {{validationCount}} validations were ran.
+              {{passCount}} PASSED
+              {{failCount}} FAILED
+          text: "{{#each validationSuites}}\n
+            #### {{{statusIcon status}}} Validator: {{toUpperCase name}}\n
+            {{#each validations }} * {{{statusIcon status}}} ***{{{ description }}}***\n
+                 Input : {{{details.input}}}\n
+                 Settings : {{{displaySettings details.settings}}}\n
+                 {{/each}}\n
+            {{/each}}"
+      error:
+        - do: checks # default fail case
+          status: 'failure' # Can be: success, failure, neutral, cancelled, timed_out, or action_required
+          payload:
+          title: 'Mergeable Run have been Completed!'
+          summary: |
+            ### Status: {{toUpperCase validationStatus}}
+              Here are some stats of the run:
+              {{validationCount}} validations were ran.
+              {{passCount}} PASSED
+              {{failCount}} FAILED
+              {{errorCount}} ERRORED
+          text: "{{#each validationSuites}}\n
+            #### {{{statusIcon status}}} Validator: {{toUpperCase name}}\n
+            Status {{toUpperCase status}}
+            {{#each validations }} * {{{statusIcon status}}} ***{{{ description }}}***\n
+                 Input : {{{details.input}}}\n
+                 Settings : {{{displaySettings details.settings}}}\n
+                  {{#if details.error}}
+                  Error : {{{details.error}}}\n
+                  {{/if}}
+                 {{/each}}\n
+            {{/each}}"
+
 
 .. note::
     testing note
