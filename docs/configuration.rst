@@ -11,7 +11,7 @@ First, you'll need to start by creating a `.github/mergeable.yml` file in your r
 Next, we'll go into how the configuration is structured.
 
 Basics
-=====================================
+------------------
 
 Mergeable configuration consists of an array of independent rule sets where each rule set needs to have the following properties:
 
