@@ -28,8 +28,7 @@ error:
 
 Here is a full example of how a rule set looks
 
-::
-
+.. code-block::
     version: 2
     mergeable:
       - when: pull_request.*
