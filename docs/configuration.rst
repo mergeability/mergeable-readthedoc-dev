@@ -4,7 +4,8 @@ Configuration
 Basics
 This is the configuration page
 
-Hint
+.. hint::
+    testing Hint
 
-testing Hint
-
+.. warning::
+    testing warning
