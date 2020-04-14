@@ -28,9 +28,12 @@ error:
 
 Here is a full example of how a rule set looks
 
-.. highlights::
+::
+
     version: 2
-    mergeable:
+
+
+mergeable:
       - when: pull_request.*
         validate:
           - do: title
