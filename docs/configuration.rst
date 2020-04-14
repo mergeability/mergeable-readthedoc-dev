@@ -114,5 +114,12 @@ Approvals
         changes_requested: true #If true, block all approvals when one of the reviewers gave 'changes_requested' review
         message: 'Custom message...'
 
+.. note::
+    `owners` sub-option only works in public repos right now, we have plans to enable it for private repos in the future.
+
+Supported Events:
+::
+
+    'pull_request.*', 'pull_request_review.*'
 
 
