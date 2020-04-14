@@ -63,8 +63,8 @@ Here is a full example of how a rule set looks
                      {{/each}}\n
                 {{/each}}"
           error:
-            - do: checks # default fail case
-              status: 'failure' # Can be: success, failure, neutral, cancelled, timed_out, or action_required
+            - do: checks # default error case
+              status: 'action_required' # Can be: success, failure, neutral, cancelled, timed_out, or action_required
               payload:
               title: 'Mergeable Run have been Completed!'
               summary: |
