@@ -33,11 +33,11 @@ Here is a full example of how a rule set looks
     version: 2
     mergeable:
         - when: pull_request.*
+        validate:
+            - do: title
+              must_exclude:
 
-validate:
-          - do: title
-            must_exclude:
-              regex: [WIP]
+regex: [WIP]
               message: 'PR is still WIP'
         pass:
           - do: checks # default pass case
