@@ -118,7 +118,7 @@ Approvals
         message: 'Custom message...'
 
 .. note::
-    `owners` sub-option only works in public repos right now, we have plans to enable it for private repos in the future.
+    ``owners`` sub-option only works in public repos right now, we have plans to enable it for private repos in the future.
 
 Supported Events:
 ::
