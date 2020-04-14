@@ -13,7 +13,7 @@ Next, we'll go into how the configuration is structured.
 Basics
 =====================================
 
-Mergeable configuration consists of an array of rule sets where each rule set needs to have the following properties:
+Mergeable configuration consists of an array of independent rule sets where each rule set needs to have the following properties:
 
 when:
     specify webhook event(s) in which to process the rule set
@@ -86,12 +86,5 @@ Here is a full example of how a rule set looks
                       {{/each}}\n
                 {{/each}}"
 
-
 .. note::
-    testing note
-
-.. hint::
-    testing Hint
-
-.. warning::
-    testing warning
+    There are some default actions that'll be automatically applied based on the events specified
