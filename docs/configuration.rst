@@ -58,8 +58,8 @@ Validators are checks that mergeable will process in order to determine whether 
 
 Validator List
 
-:ref:`approval`
-:ref:`changeset`
+.. toctree::
+    validator/approval
 
 
 Actions
