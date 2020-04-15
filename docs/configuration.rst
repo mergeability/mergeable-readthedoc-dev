@@ -76,4 +76,12 @@ Validator List
 Actions
 ------------
 
+.. toctree::
+    actions/assign.rst
+    actions/check.rst
+    actions/close.rst
+    actions/comment.rst
+    actions/label.rst
+    actions/request_review.rst
+
 
