@@ -57,7 +57,7 @@ Validators are checks that mergeable will process in order to determine whether 
     Each validator have certain events that it can support, so keep an eye out for them.
 
 .. hint::
-    Don't see an validator that should be on here? Let us know by creating an `issue <https://github.com/mergeability/mergeable/issues/new>` on github
+    Don't see an validator that should be on here? Let us know by creating an `Link issue <https://github.com/mergeability/mergeable/issues/new>` _ on github
 
 Validator List
 
@@ -82,7 +82,7 @@ Actions
 Actions that mergeable is currently able to perform.
 
 .. hint::
-    Don't see an action that should be on here? Let us know by creating an `issue <https://github.com/mergeability/mergeable/issues/new>` on github
+    Don't see an action that should be on here? Let us know by creating an `issue <https://github.com/mergeability/mergeable/issues/new>` _ on github
 
 .. toctree::
     actions/assign.rst
