@@ -6,7 +6,7 @@ Configuration
 First, you'll need to start by creating a `.github/mergeable.yml` file in your repository.
 
 .. hint::
-  Check out our :ref:Receipe page for examples and most commonly used settings
+  Check out our :ref:`_receipes` page for examples and most commonly used settings
 
 Next, we'll go into how the configuration is structured.
 
