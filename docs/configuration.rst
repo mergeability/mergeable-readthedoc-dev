@@ -59,7 +59,7 @@ Validators are checks that mergeable will process in order to determine whether 
 Validator List
 
 .. toctree::
-    validators/approval
+    validators/approval.rst
 
 
 Actions
