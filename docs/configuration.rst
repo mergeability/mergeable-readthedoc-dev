@@ -211,6 +211,142 @@ Supported Events:
 
     'pull_request.*', 'pull_request_review.*', 'issues.*'
 
+Label
+^^^^^^^^^^^^^^
+
+::
+
+    - do: label
+      no_empty:
+         enabled: false # Cannot be empty when true.
+         message: 'Custom message...'
+      must_include:
+         regex: 'type|chore|wont'
+         regex_flag: 'none' # Optional. Specify the flag for Regex. default is 'i', to disable default use 'none'
+         message: 'Custom message...'
+      must_exclude:
+         regex: 'DO NOT MERGE'
+         regex_flag: 'none' # Optional. Specify the flag for Regex. default is 'i', to disable default use 'none'
+         message: 'Custom message...'
+      begins_with:
+         match: 'A String' # or array of strings
+         message: 'Some message...'
+      ends_with:
+         match: 'A String' # or array of strings
+         message: 'Come message...'
+      # all of the message sub-option is optional
+
+Supported Events:
+::
+
+    'pull_request.*', 'pull_request_review.*', 'issues.*'
+
+Change set
+^^^^^^^^^^^^^^
+
+::
+
+    - do: changeset # validate against the files in the PR
+      no_empty:
+         enabled: false # Cannot be empty when true.
+         message: 'Custom message...'
+      must_include:
+         regex: 'yarn.lock'
+         message: 'Custom message...'
+      must_exclude:
+         regex: 'package.json'
+         message: 'Custom message...'
+      begins_with:
+         match: 'A String' # or array of strings
+         message: 'Some message...'
+      ends_with:
+         match: 'A String' # or array of strings
+         message: 'Come message...'
+      min:
+          count: 2 # min number of files in a PR
+          message: 'Custom message...'
+      max:
+         count: 2 # max number of files in a PR
+         message: 'Custom message...'
+      # all of the message sub-option is optional
+
+Supported Events:
+::
+
+    'pull_request.*', 'pull_request_review.*', 'issues.*'
+
+
+Milestone
+^^^^^^^^^^^^^^
+
+::
+
+    - do: milestone
+      no_empty:
+         enabled: true # Cannot be empty when true.
+         message: 'Custom message...'
+      must_include:
+         regex: 'type|chore|wont'
+         regex_flag: 'none' # Optional. Specify the flag for Regex. default is 'i', to disable default use 'none'
+         message: 'Custom message...'
+      must_exclude:
+         regex: 'DO NOT MERGE'
+         regex_flag: 'none' # Optional. Specify the flag for Regex. default is 'i', to disable default use 'none'
+         message: 'Custom message...'
+      begins_with:
+         match: 'A String' # array of strings
+         message: 'Some message...'
+      ends_with:
+         match: 'A String' # array list of strings
+         message: 'Come message...'
+      # all of the message sub-option is optional
+
+.. note::
+    When a closing keyword is used in the description of a pull request. The annotated issue will be validated against the conditions as well.
+
+Supported Events:
+::
+
+    'pull_request.*', 'pull_request_review.*', 'issues.*'
+
+
+Project
+^^^^^^^^^^^^^^
+
+::
+
+    - do: project
+      must_include:
+         regex: 'type|chore|wont'
+         message: 'Custom message...'
+
+.. note::
+    When a closing keyword is used in the description of a pull request. The annotated issue will be validated against the conditions as well.
+
+Supported Events:
+::
+
+    'pull_request.*', 'pull_request_review.*', 'issues.*'
+
+Stale
+^^^^^^^^^^^^^^
+
+::
+
+    - do: stale
+    days: 20 # number of days ago.
+    type: pull_request, issues # what items to search for.
+
+.. note::
+    This is a special use case. The schedule event runs on an interval. When used with stale, it will search for issues and/or pull request that are n days old. See a full example »
+
+Supported Events:
+::
+
+    'pull_request.*', 'pull_request_review.*', 'issues.*'
+
+
+
 Actions
 ------------
 
