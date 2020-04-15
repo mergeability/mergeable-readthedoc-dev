@@ -60,6 +60,17 @@ Validator List
 
 .. toctree::
     validators/approval.rst
+    validators/assignee.rst
+    validators/changeset.rst
+    validators/commit.rst
+    validators/dependent.rst
+    validators/description.rst
+    validators/label.rst
+    validators/milestone.rst
+    validators/project.rst
+    validators/size.rst
+    validators/stale.rst
+    validators/title.rst
 
 
 Actions
