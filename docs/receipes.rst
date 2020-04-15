@@ -1,8 +1,8 @@
-.. _my-reference-label:
+.. _receipes-page:
 
 Receipes
 --------------------------
 
 This is the text of the section.
 
-It refers to the section itself, see :ref:`my-reference-label`.
+It refers to the section itself, see :ref:`receipes-page`.
