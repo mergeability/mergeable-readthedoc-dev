@@ -3,7 +3,7 @@ Configuration
 
 **Mergeable** is **highly** configurable.
 
-First, you'll need to start by creating a `.github/mergeable.yml` file in your repository.
+First, you'll need to start by creating a ``.github/mergeable.yml`` file in your repository.
 
 .. hint::
   Check out our :ref:`receipes-page` page for examples and most commonly used settings
