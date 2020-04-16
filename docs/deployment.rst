@@ -16,15 +16,15 @@ The `Probot deployment guide <https://probot.github.io/docs/deployment/>`_ descr
 
 **Permissions:**
 
-*Checks - **Read & Write**
-*Issues - **Read & Write**
-*Repository metadata - **Read Only**
-*Pull requests - **Read Only**
-*Commit Statuses - **Read & Write**
-*Single File - **Read-only**
-  *Path: ``.github/mergeable.yml``
-*Repository Contents - **Read-Only**
-*Repository projects - **Read-Only**
+* Checks - **Read & Write**
+* Issues - **Read & Write**
+* Repository metadata - **Read Only**
+* Pull requests - **Read Only**
+* Commit Statuses - **Read & Write**
+* Single File - **Read-only**
+  * Path: ``.github/mergeable.yml``
+* Repository Contents - **Read-Only**
+* Repository projects - **Read-Only**
 
 **And subscription to the following events:**
 
