@@ -20,11 +20,3 @@ To get started, follow
    contributing.rst
    support.rst
    changelog.rst
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
