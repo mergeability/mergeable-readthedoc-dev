@@ -33,7 +33,7 @@ Make sure to create a private key for the app after it's been registered.
 .. _running-locally:
 
 Running Locally
-^^^^^^^^^^^^^^^^
+------------------
 
 1. Clone the forked repository on to your machine
 2. Globally install smee-client from with npm ```npm install -g smee-client```
