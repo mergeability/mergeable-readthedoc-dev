@@ -1,7 +1,7 @@
 .. _deploying:
 
 Deploying
-^^^^^^^^^^^^^^^^^
+---------------------
 If you would like to run your own instance of this plugin, you can do so by forking this repo and deploying it to your own servers or run it locally
 
 The `Probot deployment guide <https://probot.github.io/docs/deployment/>`_ describes this as well
@@ -47,7 +47,7 @@ Running Locally
 
 
 Possible Issues
-^^^^^^^^^^^^^^^^
+-----------------
 
 ####  `400 bad request` / `Error: No X-Hub-Signature found on request`
 
