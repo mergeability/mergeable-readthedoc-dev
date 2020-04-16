@@ -9,11 +9,13 @@ The `Probot deployment guide <https://probot.github.io/docs/deployment/>`_ descr
 `Create a GitHub App <https://github.com/settings/apps/new>`_ and configure the permissions & events with the following:
 
 **Settings:**
+
 * GitHub app name - **Your app name**
 * Webhook URL - **Your webhook url for listening to events** (for local deployments you can use `smee.io <https://smee.io/>`_))
 * Webhook secret - **Your generated webhook seceret** (GitHub app page has instructions on how to create this)
 
 **Permissions:**
+
 * Checks - **Read & Write**
 * Issues - **Read & Write**
 * Repository metadata - **Read Only**
@@ -25,6 +27,7 @@ The `Probot deployment guide <https://probot.github.io/docs/deployment/>`_ descr
 * Repository projects - **Read-Only**
 
 **And subscription to the following events:**
+
 * [x] Pull request
 * [x] Pull request review comment
 * [x] Pull request review
