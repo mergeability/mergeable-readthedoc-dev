@@ -7,4 +7,4 @@ We need your help:
 * Fix a **bug**, implement a new **validator** or **action** and open a `pull request <https://github.com/mergeability/mergeable/pulls>`_!
 
 .. note::
-    For development and testing, you'll want to read :ref:`running-locally` :ref:`receipes-page`.
+    For development and testing, you'll want to read :ref:`deploying`.

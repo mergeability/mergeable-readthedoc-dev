@@ -1,3 +1,5 @@
+.. _deploying:
+
 Deploying
 ^^^^^^^^^^^^^^^^^
 If you would like to run your own instance of this plugin, you can do so by forking this repo and deploying it to your own servers or run it locally
@@ -29,8 +31,6 @@ The `Probot deployment guide <https://probot.github.io/docs/deployment/>`_ descr
 - [x] Issues
 
 Make sure to create a private key for the app after it's been registered.
-
-.. _running-locally:
 
 Running Locally
 ------------------
