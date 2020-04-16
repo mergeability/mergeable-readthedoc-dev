@@ -13,7 +13,7 @@ To get started, follow
 .. toctree::
    :maxdepth: 2
 
-   installation.rst
+   usage.rst
    configuration.rst
    receipes.rst
    roadmap.rst
