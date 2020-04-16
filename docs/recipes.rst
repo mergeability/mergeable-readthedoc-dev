@@ -1,6 +1,6 @@
-.. _receipes-page:
+.. _recipes-page:
 
-Receipes
+Recipes
 --------------------------
 
 Work In Progress

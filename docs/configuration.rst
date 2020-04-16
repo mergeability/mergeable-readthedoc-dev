@@ -8,17 +8,17 @@ Configuration
 First, you'll need to start by creating a ``.github/mergeable.yml`` file in your repository.
 
 .. hint::
-  Check out our :ref:`receipes-page` page for examples and most commonly used settings
+  Check out our :ref:`recipes-page` page for examples and most commonly used settings
 
 Next, we'll go into how the configuration is structured.
 
 Basics
 ------------------
 
-Mergeable configuration consists of an array of independent rule sets where each rule set needs to have the following properties:
+Mergeable configuration consists of an array of independent recipes where each recipe needs to have the following properties:
 
 when:
-    specify webhook event(s) in which to process the rule set
+    specify webhook event(s) in which to process the validation
 validate:
     specify a series of validator to be checked
 pass:
@@ -28,7 +28,7 @@ fail:
 error:
     specify a series of action to execute if the validation suite returned a `error`
 
-Here is a full example of how a rule set looks
+Here is a full example of how a recipe looks
 
 ::
 
