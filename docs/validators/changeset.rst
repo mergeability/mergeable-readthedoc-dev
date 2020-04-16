@@ -30,4 +30,4 @@ Change set
 Supported Events:
 ::
 
-    'pull_request.*', 'pull_request_review.*', 'issues.*'
+    'pull_request.*', 'pull_request_review.*'

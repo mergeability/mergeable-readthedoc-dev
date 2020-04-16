@@ -2,7 +2,8 @@ Check
 ^^^^^^^^
 
 .. note::
-    Some default cases do exists for pass, fail and error cases but if you provide these cases, the defaults will be overwritten
+    Some default cases do exists for pass, fail and error cases if you don't provide them when the event include ``pull_request.*``.
+    If you provide these cases, the defaults will be overwritten
 
 ::
 
