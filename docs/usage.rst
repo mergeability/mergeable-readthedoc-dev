@@ -6,4 +6,4 @@ Usage
 #. Commit and push the recipes to your repository at ``.github/mergeable.yml``
 
 .. note::
-    You can also deploy to your own server. See :ref:`deployment`
+    You can also deploy to your own server. See :ref:`deploying`
