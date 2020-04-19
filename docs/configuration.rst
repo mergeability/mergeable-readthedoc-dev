@@ -3,7 +3,7 @@
 Configuration
 =====================================
 
-**Mergeable** is **highly** configurable.
+**Mergeable** is a **highly** configurable.
 
 First, you'll need to start by creating a ``.github/mergeable.yml`` file in your repository.
 
@@ -30,7 +30,7 @@ error:
 
 Here is a full example of how a recipe looks
 
-::
+.. code-block:: yml
 
     version: 2
     mergeable:
