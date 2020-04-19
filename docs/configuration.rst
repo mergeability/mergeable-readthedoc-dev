@@ -30,7 +30,7 @@ error:
 
 Here is a full example of how a recipe looks
 
-::
+.. code-block:: yml
 
     version: 2
     mergeable:
