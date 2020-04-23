@@ -95,3 +95,39 @@ Actions that mergeable is currently able to perform.
     actions/request_review.rst
 
 
+.. _organisation-wide-defaults:
+
+Organisation-wide defaults
+---------------------------
+
+You can specify a default configuration to be applied across your GitHub organisation.
+This can help reduce how many configuration files you need to maintain and make it easier
+to get started with Mergeable.
+
+To add a default configuration:
+
+1. Create a repository called `.github` in your organisation.
+2. Create a file with the path `.github/mergeable.yml` in this repository.
+
+The final path of the file (including the repo name) should be `<YOUR_ORG>/.github/.github/mergeable.yml`
+
+Mergeable will now use this file as the default when it cannot find one in a given
+repository or PR. It determines the file to use in the following order:
+
+1. A `mergeable.yml` inside the PR.
+2. A `mergeable.yml` inside the repository the PR is for.
+3. A `mergeable.yml` at `<YOUR_ORG>/.github/.github/mergeable.yml`.
+
+**Note**: Mergeable will only ever use a _single_ file. It does _not_ merge files.
+
+## Why the weird default file path?
+
+The Probots library that Mergeable uses automatically searches for config files
+in a repo named `.github` within the organisation.
+
+The double nesting of the `<YOUR_ORG>/.github/.github/mergeable.yml` default
+file is unfortunately necessary. The GitHub app permissions model only lets you
+specify a single path for your probot to access, so it must be the same as in
+regular repositories.
+
+

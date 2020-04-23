@@ -16,7 +16,6 @@ To get started, follow
    usage.rst
    configuration.rst
    recipes.rst
-   roadmap.rst
    contributing.rst
    support.rst
    changelog.rst
