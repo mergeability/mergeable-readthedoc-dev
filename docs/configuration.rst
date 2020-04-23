@@ -118,9 +118,8 @@ repository or PR. It determines the file to use in the following order:
 2. A `mergeable.yml` inside the repository the PR is for.
 3. A `mergeable.yml` at `<YOUR_ORG>/.github/.github/mergeable.yml`.
 
-**Note**: Mergeable will only ever use a _single_ file. It does _not_ merge files.
-
-## Why the weird default file path?
+Why the weird default file path?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The Probots library that Mergeable uses automatically searches for config files
 in a repo named `.github` within the organisation.
